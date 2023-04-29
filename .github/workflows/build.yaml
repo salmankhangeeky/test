@@ -14,14 +14,10 @@ jobs:
       
     - name: Install dependencies
       run: npm install
-      
-    - name: Build application
-      run: node index.js
-      
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.4
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         ssh-host: ${{ secrets.SSH_HOST }}
-        source: dist/
-        target: /var/www/my-node-app/
+        source: ./
+        target: ./
