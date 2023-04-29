@@ -16,8 +16,11 @@ jobs:
       run: npm install
       
     - name: Start Node.js server
-      run: node index.js
-      
+      run: |
+        npm install pm2 -g
+        pm2 start index.js --name my-node-app
+        pm2 save
+        
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.4
       with:
