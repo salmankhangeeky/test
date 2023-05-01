@@ -42,7 +42,7 @@ jobs:
             . ~/.nvm/nvm.sh
 
              nvm install 14
-             npm install  pm2
+             rm -rf test
              git clone https://github.com/salmankhangeeky/test
              git checkout main
              cd test 
