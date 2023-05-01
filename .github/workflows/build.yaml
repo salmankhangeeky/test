@@ -45,4 +45,4 @@ jobs:
              npm install  pm2
              git pull origin main
              npm install
-             pm2 start index.js --name my-node-app
+             node index.js
