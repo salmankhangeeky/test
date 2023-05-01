@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.send("Hello, world! from CI-CD");
+  res.send("Hello, world! from CI-CD ");
 });
 
 app.listen(3000, () => {
