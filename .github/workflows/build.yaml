@@ -42,9 +42,10 @@ jobs:
             . ~/.nvm/nvm.sh
 
              nvm install 14
-             rm -rf test
-             git clone https://github.com/salmankhangeeky/test
-             git checkout main
+             npm install pm2 -g 
+             git pull origin main
+
              cd test 
              npm install
-             node index.js
+             pm2 start index.js --name my-node-app
+             pm2 save
