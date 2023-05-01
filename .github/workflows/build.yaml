@@ -43,6 +43,8 @@ jobs:
 
              nvm install 14
              npm install  pm2
-             git pull origin main
+             git clone https://github.com/salmankhangeeky/test
+             git checkout main
+
              npm install
              node index.js
