@@ -45,6 +45,6 @@ jobs:
              npm install  pm2
              git clone https://github.com/salmankhangeeky/test
              git checkout main
-
+             cd test 
              npm install
              node index.js
