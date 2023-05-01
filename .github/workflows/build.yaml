@@ -43,7 +43,6 @@ jobs:
 
              nvm instal 14
              npm install -g pm2
-             cd ~/test
              git pull origin main
              npm install
              pm2 start index.js --name my-node-app
